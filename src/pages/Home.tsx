@@ -85,8 +85,7 @@ const Home = () => {
               <Button
                 asChild
                 size="lg"
-                variant="outline"
-                className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary"
+                className="bg-white text-primary hover:bg-gray-100 text-lg px-8"
               >
                 <Link to="/projects">Каталог проектов</Link>
               </Button>
