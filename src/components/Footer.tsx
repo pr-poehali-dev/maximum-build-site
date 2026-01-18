@@ -11,7 +11,7 @@ const Footer = () => {
               <img 
                 src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/57806fef-8c15-416d-b870-abdc27c6636d.jpg" 
                 alt="Максимум Строй" 
-                className="h-12 object-contain"
+                className="h-12 object-contain drop-shadow-md opacity-90"
               />
             </div>
             <p className="text-sm text-secondary-foreground/80">
