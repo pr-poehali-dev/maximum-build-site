@@ -7,13 +7,12 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="mb-4">
               <img 
-                src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/32a44238-31fe-4140-a3f9-254023406bbe.jpg" 
+                src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/88c60e06-f54f-4db2-9801-4cfe55894821.jpg" 
                 alt="Максимум Строй" 
-                className="h-10 w-10 object-contain"
+                className="h-10 object-contain"
               />
-              <div className="font-bold text-lg">Максимум Строй</div>
             </div>
             <p className="text-sm text-secondary-foreground/80">
               Профессиональное строительство и качественный сервис с 2005 года
