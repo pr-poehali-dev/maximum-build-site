@@ -1,12 +1,16 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CallbackModal from "@/components/CallbackModal";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const [callbackModalOpen, setCallbackModalOpen] = useState(false);
+
   const stats = [
     { value: "500+", label: "Реализованных проектов" },
     { value: "18", label: "Лет на рынке" },
@@ -273,15 +277,13 @@ const Home = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button
-              asChild
+              onClick={() => setCallbackModalOpen(true)}
               size="lg"
               variant="outline"
               className="bg-white text-primary hover:bg-gray-100 text-lg px-8"
             >
-              <Link to="/contacts">
-                <Icon name="Phone" className="mr-2 h-5 w-5" />
-                Заказать звонок
-              </Link>
+              <Icon name="Phone" className="mr-2 h-5 w-5" />
+              Заказать звонок
             </Button>
             <Button asChild size="lg" variant="secondary" className="text-lg px-8">
               <Link to="/projects">Посмотреть проекты</Link>
@@ -290,6 +292,7 @@ const Home = () => {
         </div>
       </section>
 
+      <CallbackModal open={callbackModalOpen} onOpenChange={setCallbackModalOpen} />
       <Footer />
     </div>
   );

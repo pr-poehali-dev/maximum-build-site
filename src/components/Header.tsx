@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import CallbackModal from '@/components/CallbackModal';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [callbackModalOpen, setCallbackModalOpen] = useState(false);
   const location = useLocation();
 
   const mainNav = [
@@ -83,8 +85,8 @@ const Header = () => {
               </a>
               <span className="text-xs text-muted-foreground">Бесплатная консультация</span>
             </div>
-            <Button asChild className="bg-primary hover:bg-primary/90">
-              <Link to="/contacts">Заказать звонок</Link>
+            <Button onClick={() => setCallbackModalOpen(true)} className="bg-primary hover:bg-primary/90">
+              Заказать звонок
             </Button>
             <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
               <Link to="/calculator">Рассчитать проект</Link>
@@ -167,8 +169,8 @@ const Header = () => {
               <a href="tel:+74951234567" className="block text-lg font-bold text-primary">
                 +7 (495) 123-45-67
               </a>
-              <Button asChild className="w-full">
-                <Link to="/contacts">Заказать звонок</Link>
+              <Button onClick={() => { setCallbackModalOpen(true); setMobileMenuOpen(false); }} className="w-full">
+                Заказать звонок
               </Button>
               <Button asChild variant="outline" className="w-full">
                 <Link to="/calculator">Рассчитать проект</Link>
@@ -177,6 +179,8 @@ const Header = () => {
           </nav>
         )}
       </div>
+
+      <CallbackModal open={callbackModalOpen} onOpenChange={setCallbackModalOpen} />
     </header>
   );
 };
