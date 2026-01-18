@@ -1,8 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const stats = [
@@ -15,24 +17,34 @@ const Home = () => {
   const services = [
     {
       icon: 'Building2',
-      title: 'Жилищное строительство',
-      description: 'Строительство многоквартирных домов и частных коттеджей под ключ',
+      title: 'Дома из бруса',
+      description: 'Экологичные и долговечные дома из профилированного и клееного бруса',
+      link: '/projects/timber',
     },
     {
-      icon: 'Factory',
-      title: 'Промышленные объекты',
-      description: 'Возведение производственных комплексов и складских помещений',
+      icon: 'Home',
+      title: 'Каркасные дома',
+      description: 'Быстровозводимые энергоэффективные каркасные дома под ключ',
+      link: '/projects/frame',
     },
     {
-      icon: 'Store',
-      title: 'Коммерческая недвижимость',
-      description: 'Строительство торговых центров, офисных зданий и бизнес-центров',
+      icon: 'Waves',
+      title: 'Бани и сауны',
+      description: 'Строительство бань из бруса и бревна с русской парной',
+      link: '/projects/baths',
     },
     {
       icon: 'Wrench',
-      title: 'Реконструкция',
-      description: 'Полная реконструкция и капитальный ремонт зданий любой сложности',
+      title: 'Фундаменты',
+      description: 'Устройство свайно-винтовых и ленточных фундаментов',
+      link: '/services/foundation',
     },
+  ];
+
+  const promotions = [
+    { title: 'Спецтехника в подарок', badge: 'Подарок' },
+    { title: 'Скидка до 15% на дома', badge: 'До -15%' },
+    { title: 'Принимаем мат. капитал', badge: 'Мат. капитал' },
   ];
 
   return (
@@ -40,28 +52,47 @@ const Home = () => {
       <Header />
       
       <section 
-        className="relative bg-cover bg-center py-32 text-white"
+        className="relative bg-cover bg-center py-40 text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(26, 31, 44, 0.7), rgba(26, 31, 44, 0.7)), url('https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/ff90d193-120f-4342-87e3-18cfd9b34443.jpg')`,
+          backgroundImage: `linear-gradient(rgba(118, 24, 32, 0.75), rgba(118, 24, 32, 0.75)), url('https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/ff90d193-120f-4342-87e3-18cfd9b34443.jpg')`,
         }}
       >
         <div className="container mx-auto px-4">
           <div className="max-w-3xl animate-fade-in">
+            <Badge className="bg-secondary text-white mb-4 text-sm py-1 px-3">
+              С 2005 года строим дома мечты
+            </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Строим будущее с максимальным качеством
+              Строительство домов из бруса под ключ
             </h1>
-            <p className="text-xl mb-8 text-gray-200">
-              Профессиональное строительство жилых, коммерческих и промышленных объектов. 
-              Работаем по всей России с 2005 года.
+            <p className="text-xl mb-8 text-gray-100">
+              Профессиональное строительство деревянных домов, бань и коттеджей. 
+              Собственное производство. Гарантия 5 лет.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="text-lg px-8">
-                Получить консультацию
+              <Button size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg px-8">
+                Рассчитать проект
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 bg-white/10 border-white text-white hover:bg-white hover:text-secondary">
-                Наши проекты
+              <Button size="lg" variant="outline" className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary">
+                Каталог проектов
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-6 bg-primary">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center items-center gap-8 text-white">
+            {promotions.map((promo, index) => (
+              <Link key={index} to="/stock" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <Icon name="Tag" className="h-6 w-6" />
+                <div>
+                  <div className="text-sm opacity-80">{promo.badge}</div>
+                  <div className="font-bold">{promo.title}</div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -84,19 +115,21 @@ const Home = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Наши услуги</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Полный спектр строительных услуг для реализации проектов любой сложности
+              Полный цикл строительства деревянных домов от проектирования до сдачи под ключ
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <div className="bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name={service.icon} className="h-7 w-7 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-muted-foreground">{service.description}</p>
-              </Card>
+              <Link key={index} to={service.link}>
+                <Card className="p-6 hover:shadow-xl transition-all duration-300 group h-full">
+                  <div className="bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all">
+                    <Icon name={service.icon} className="h-7 w-7 text-primary group-hover:text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">{service.title}</h3>
+                  <p className="text-muted-foreground">{service.description}</p>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
@@ -108,34 +141,44 @@ const Home = () => {
             <h2 className="text-4xl font-bold mb-4">Почему выбирают нас</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Award" className="h-8 w-8 text-white" />
+              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Factory" className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Гарантия качества</h3>
+              <h3 className="text-xl font-semibold mb-3">Собственное производство</h3>
               <p className="text-muted-foreground">
-                Все работы выполняются в соответствии с ГОСТами и СНиПами
+                Контроль качества на всех этапах изготовления
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Award" className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Гарантия 5 лет</h3>
+              <p className="text-muted-foreground">
+                Официальная гарантия на все виды работ
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Clock" className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Сроки в договоре</h3>
               <p className="text-muted-foreground">
-                Четкое соблюдение сроков строительства без задержек
+                Четкое соблюдение сроков строительства
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Users" className="h-8 w-8 text-white" />
+              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="CreditCard" className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Опытная команда</h3>
+              <h3 className="text-xl font-semibold mb-3">Кредит и рассрочка</h3>
               <p className="text-muted-foreground">
-                Более 150 квалифицированных специалистов
+                Гибкие условия оплаты и материнский капитал
               </p>
             </div>
           </div>
@@ -144,14 +187,55 @@ const Home = () => {
 
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="bg-secondary text-secondary-foreground rounded-2xl p-12 text-center">
-            <h2 className="text-4xl font-bold mb-4">Готовы начать проект?</h2>
-            <p className="text-xl mb-8 text-secondary-foreground/80">
-              Свяжитесь с нами для бесплатной консультации и расчета стоимости
-            </p>
-            <Button size="lg" className="text-lg px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Badge className="bg-primary text-white mb-4">Калькулятор стоимости</Badge>
+              <h2 className="text-4xl font-bold mb-6">Рассчитайте стоимость вашего дома</h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Заполните простую форму и получите предварительный расчет стоимости строительства 
+                в течение 15 минут. Бесплатно и без обязательств.
+              </p>
+              <ul className="space-y-3 mb-8">
+                {[
+                  'Точный расчет по вашим параметрам',
+                  'Учет всех пожеланий и требований',
+                  'Прозрачная смета без скрытых платежей',
+                  'Консультация специалиста'
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center gap-3">
+                    <Icon name="CheckCircle2" className="h-6 w-6 text-primary flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
+                Рассчитать стоимость
+              </Button>
+            </div>
+            <Card className="p-8 lg:p-12">
+              <img 
+                src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/b64704d8-8ba4-48d5-b0dc-6dbeed1ca6f9.jpg"
+                alt="Калькулятор"
+                className="rounded-lg shadow-xl"
+              />
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-6">Готовы начать строительство?</h2>
+          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            Оставьте заявку на бесплатную консультацию, и наш специалист свяжется с вами в течение 15 минут
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button size="lg" variant="outline" className="bg-white text-primary hover:bg-gray-100 text-lg px-8">
               <Icon name="Phone" className="mr-2 h-5 w-5" />
-              Связаться с нами
+              Заказать звонок
+            </Button>
+            <Button size="lg" variant="secondary" className="text-lg px-8">
+              Посмотреть проекты
             </Button>
           </div>
         </div>
