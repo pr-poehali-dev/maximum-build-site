@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactForm from '@/components/ContactForm';
 import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 
@@ -112,6 +113,17 @@ const About = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <ContactForm 
+              title="Есть вопросы о компании?"
+              subtitle="Свяжитесь с нами, и мы расскажем подробнее о наших проектах и возможностях"
+            />
           </div>
         </div>
       </section>

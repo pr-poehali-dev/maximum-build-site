@@ -189,16 +189,16 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-primary text-white mb-4">Калькулятор стоимости</Badge>
+              <Badge className="bg-primary text-white mb-4">Предварительный расчёт</Badge>
               <h2 className="text-4xl font-bold mb-6">Рассчитайте стоимость вашего дома</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Заполните простую форму и получите предварительный расчет стоимости строительства 
-                в течение 15 минут. Бесплатно и без обязательств.
+                Используйте наш калькулятор для предварительного расчета стоимости строительства. 
+                Результат мгновенно. Бесплатно и без обязательств.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
-                  'Точный расчет по вашим параметрам',
-                  'Учет всех пожеланий и требований',
+                  'Расчет по вашим параметрам',
+                  'Учет типа дома и материалов',
                   'Прозрачная смета без скрытых платежей',
                   'Консультация специалиста'
                 ].map((item, index) => (
@@ -208,9 +208,11 @@ const Home = () => {
                   </li>
                 ))}
               </ul>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
-                Рассчитать стоимость
-              </Button>
+              <Link to="/calculator">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
+                  Перейти к калькулятору
+                </Button>
+              </Link>
             </div>
             <Card className="p-8 lg:p-12">
               <img 

@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactForm from '@/components/ContactForm';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
@@ -114,16 +115,15 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-secondary text-secondary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Нужна консультация?</h2>
-          <p className="text-xl mb-8 text-secondary-foreground/80 max-w-2xl mx-auto">
-            Оставьте заявку, и наш специалист свяжется с вами в ближайшее время
-          </p>
-          <Button size="lg" className="text-lg px-8">
-            <Icon name="Phone" className="mr-2 h-5 w-5" />
-            Заказать звонок
-          </Button>
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto">
+            <ContactForm 
+              title="Нужна консультация по услугам?"
+              subtitle="Оставьте заявку, и наш специалист свяжется с вами в ближайшее время"
+              showServiceSelect={true}
+            />
+          </div>
         </div>
       </section>
 

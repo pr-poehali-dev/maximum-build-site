@@ -1,9 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactForm from '@/components/ContactForm';
 import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import Icon from '@/components/ui/icon';
 
 const Contacts = () => {
@@ -23,33 +21,11 @@ const Contacts = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold mb-8">Напишите нам</h2>
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">Ваше имя</label>
-                  <Input placeholder="Иван Иванов" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Телефон</label>
-                  <Input type="tel" placeholder="+7 (___) ___-__-__" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Email</label>
-                  <Input type="email" placeholder="example@mail.ru" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Сообщение</label>
-                  <Textarea 
-                    placeholder="Расскажите о вашем проекте..."
-                    rows={6}
-                  />
-                </div>
-                <Button size="lg" className="w-full">
-                  Отправить заявку
-                </Button>
-              </form>
-            </div>
+            <ContactForm 
+              title="Напишите нам"
+              subtitle="Заполните форму, и мы ответим на все ваши вопросы"
+              showServiceSelect={true}
+            />
 
             <div className="space-y-6">
               <h2 className="text-3xl font-bold mb-8">Контактная информация</h2>
