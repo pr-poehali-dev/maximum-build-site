@@ -11,6 +11,8 @@ import Portfolio from "./pages/Portfolio";
 import Contacts from "./pages/Contacts";
 import Stock from "./pages/Stock";
 import Calculator from "./pages/Calculator";
+import Team from "./pages/Team";
+import Certificates from "./pages/Certificates";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,8 +33,9 @@ const App = () => (
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/stock" element={<Stock />} />
           <Route path="/calculator" element={<Calculator />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/certificates" element={<Certificates />} />
           <Route path="/reviews" element={<NotFound />} />
-          <Route path="/articles" element={<NotFound />} />
           <Route path="/production" element={<NotFound />} />
           <Route path="/vacancies" element={<NotFound />} />
           <Route path="/faq" element={<NotFound />} />

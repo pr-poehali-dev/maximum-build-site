@@ -41,8 +41,9 @@ const Header = () => {
     },
     { label: 'Акции', path: '/stock' },
     { label: 'Портфолио', path: '/portfolio' },
+    { label: 'Команда', path: '/team' },
+    { label: 'Сертификаты', path: '/certificates' },
     { label: 'Отзывы', path: '/reviews' },
-    { label: 'Статьи', path: '/articles' },
     { label: 'Контакты', path: '/contacts' },
   ];
 
