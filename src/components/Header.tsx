@@ -68,12 +68,16 @@ const Header = () => {
 
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-3">
             <img 
-              src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/57806fef-8c15-416d-b870-abdc27c6636d.jpg" 
+              src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/f8515404-dd43-4733-8529-9498a2ea986c.jpg" 
               alt="Максимум Строй" 
-              className="h-14 object-contain drop-shadow-lg transition-transform group-hover:scale-105"
+              className="h-12 w-12 object-contain rounded"
             />
+            <div>
+              <div className="font-bold text-2xl text-primary">Максимум Строй</div>
+              <div className="text-xs text-muted-foreground">Строительная компания с 2005 года</div>
+            </div>
           </Link>
 
           <div className="hidden lg:flex items-center gap-6">
