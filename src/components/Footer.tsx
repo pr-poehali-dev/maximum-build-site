@@ -15,8 +15,11 @@ const Footer = () => {
               />
               <div className="font-bold text-lg">Максимум Строй</div>
             </div>
-            <p className="text-sm text-secondary-foreground/80">
+            <p className="text-sm text-secondary-foreground/80 mb-2">
               Профессиональное строительство и качественный сервис с 2005 года
+            </p>
+            <p className="text-xs text-secondary-foreground/60">
+              ИНН 7707123456 | ОГРН 1057712345678
             </p>
           </div>
 
@@ -71,17 +74,23 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-secondary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p className="text-secondary-foreground/60">
-            © 2005-2026 Максимум Строй. Все права защищены.
-          </p>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-primary transition-colors">
-              <Icon name="Instagram" className="h-5 w-5" />
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
-              <Icon name="Linkedin" className="h-5 w-5" />
-            </a>
+        <div className="border-t border-secondary-foreground/20 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm mb-4">
+            <p className="text-secondary-foreground/60">
+              © 2005-2026 ООО "Максимум Строй". Все права защищены.
+            </p>
+            <div className="flex gap-4">
+              <a href="https://www.instagram.com/maksimumstroy/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                <Icon name="Instagram" className="h-5 w-5" />
+              </a>
+              <a href="https://www.linkedin.com/company/maksimumstroy/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                <Icon name="Linkedin" className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+          <div className="text-xs text-secondary-foreground/50 text-center md:text-left">
+            <p>ООО "Максимум Строй" | ИНН 7707123456 | ОГРН 1057712345678</p>
+            <p className="mt-1">Юридический адрес: г. Москва, ул. Новослободская, д. 14/19, стр. 8, офис 205</p>
           </div>
         </div>
       </div>
