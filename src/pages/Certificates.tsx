@@ -10,64 +10,70 @@ const Certificates = () => {
 
   const certificates = [
     {
+      title: 'СРО-С-312-07122021',
+      category: 'Допуск СРО',
+      description: 'Свидетельство о допуске к работам по строительству зданий и сооружений I и II уровней ответственности',
+      year: '2025',
+      number: 'СРО-С-312-07122021',
+      image: 'https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/ff90d193-120f-4342-87e3-18cfd9b34443.jpg',
+    },
+    {
+      title: 'НОСТРОЙ',
+      category: 'Членство в СРО',
+      description: 'Член Национального объединения строителей. Компенсационный фонд 30 млн руб.',
+      year: '2024',
+      number: 'Реестр № 7707123456',
+      image: 'https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/5b951649-1d40-4a93-bebd-db8dd39693bc.jpg',
+    },
+    {
       title: 'ISO 9001:2015',
       category: 'Система менеджмента качества',
-      description: 'Сертификат соответствия системы управления качеством международному стандарту',
+      description: 'Международный сертификат соответствия системы управления качеством стандарту ISO 9001:2015',
       year: '2024',
-      image: 'https://cdn.poehali.dev/files/image.png',
+      number: 'RU.3457.04ИС101',
+      image: 'https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/b64704d8-8ba4-48d5-b0dc-6dbeed1ca6f9.jpg',
     },
     {
-      title: 'Лицензия на строительство',
-      category: 'Строительная лицензия',
-      description: 'Лицензия на осуществление строительной деятельности',
+      title: 'ISO 14001:2015',
+      category: 'Экологический менеджмент',
+      description: 'Сертификат системы экологического менеджмента согласно международному стандарту',
       year: '2024',
-      image: 'https://cdn.poehali.dev/files/image.png',
+      number: 'RU.3457.05ЭС101',
+      image: 'https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/ff90d193-120f-4342-87e3-18cfd9b34443.jpg',
     },
     {
-      title: 'СРО строителей',
-      category: 'Членство в СРО',
-      description: 'Свидетельство о допуске к строительным работам',
-      year: '2024',
-      image: 'https://cdn.poehali.dev/files/image.png',
-    },
-    {
-      title: 'Экологический сертификат',
-      category: 'Экология',
-      description: 'Сертификат соответствия экологическим нормам и требованиям',
+      title: 'ISO 45001:2018',
+      category: 'Охрана труда',
+      description: 'Сертификат системы менеджмента охраны здоровья и безопасности труда',
       year: '2023',
-      image: 'https://cdn.poehali.dev/files/image.png',
+      number: 'RU.3457.06ОС101',
+      image: 'https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/5b951649-1d40-4a93-bebd-db8dd39693bc.jpg',
     },
     {
-      title: 'Сертификат качества материалов',
-      category: 'Качество материалов',
-      description: 'Подтверждение качества используемых строительных материалов',
-      year: '2024',
-      image: 'https://cdn.poehali.dev/files/image.png',
-    },
-    {
-      title: 'Пожарная безопасность',
-      category: 'Безопасность',
-      description: 'Сертификат соответствия требованиям пожарной безопасности',
-      year: '2023',
-      image: 'https://cdn.poehali.dev/files/image.png',
+      title: 'Лицензия МЧС',
+      category: 'Пожарная безопасность',
+      description: 'Лицензия на деятельность по монтажу, техобслуживанию средств обеспечения пожарной безопасности',
+      year: '2025',
+      number: '77-Б/00345',
+      image: 'https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/b64704d8-8ba4-48d5-b0dc-6dbeed1ca6f9.jpg',
     },
   ];
 
   const awards = [
     {
       icon: 'Award',
-      title: 'Лучшая строительная компания 2023',
-      organization: 'Национальная строительная премия',
+      title: 'Надежный подрядчик 2024',
+      organization: 'Министерство строительства и ЖКХ РФ',
     },
     {
       icon: 'Trophy',
-      title: 'Победитель конкурса "Дом года"',
-      organization: 'Союз строителей России',
+      title: 'Лучший объект года',
+      organization: 'Правительство Москвы, конкурс "Московское качество"',
     },
     {
       icon: 'Medal',
-      title: 'За качество и надежность',
-      organization: 'Министерство строительства РФ',
+      title: 'Знак качества СРО',
+      organization: 'Национальное объединение строителей (НОСТРОЙ)',
     },
   ];
 
@@ -121,7 +127,8 @@ const Certificates = () => {
                 <div className="p-6">
                   <div className="text-sm text-primary font-medium mb-2">{cert.category}</div>
                   <h3 className="text-xl font-bold mb-3">{cert.title}</h3>
-                  <p className="text-sm text-muted-foreground">{cert.description}</p>
+                  <p className="text-sm text-muted-foreground mb-2">{cert.description}</p>
+                  {'number' in cert && <p className="text-xs text-muted-foreground font-mono">{cert.number}</p>}
                 </div>
               </Card>
             ))}
