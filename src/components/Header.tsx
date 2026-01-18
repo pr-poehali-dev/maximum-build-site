@@ -53,19 +53,6 @@ const Header = () => {
 
   return (
     <header className="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
-      <div className="bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex gap-6">
-            <span>📍 г. Москва, ул. Строителей, д. 15</span>
-            <span>⏰ Пн-Пт: 9:00-18:00</span>
-          </div>
-          <div className="hidden md:flex gap-4">
-            <a href="#" className="hover:underline">WhatsApp</a>
-            <a href="#" className="hover:underline">VK</a>
-          </div>
-        </div>
-      </div>
-
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
