@@ -79,14 +79,7 @@ const Footer = () => {
             <p className="text-secondary-foreground/60">
               © 2025-2026 ООО "Максимум Строй". Все права защищены.
             </p>
-            <div className="flex gap-4">
-              <a href="https://www.instagram.com/maksimumstroy/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                <Icon name="Instagram" className="h-5 w-5" />
-              </a>
-              <a href="https://www.linkedin.com/company/maksimumstroy/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                <Icon name="Linkedin" className="h-5 w-5" />
-              </a>
-            </div>
+
           </div>
           <div className="text-xs text-secondary-foreground/50 text-center md:text-left">
             <p>ООО "Максимум Строй" | ИНН 3900039662 | ОГРН 1253900003917 | КПП 390001001</p>
