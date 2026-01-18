@@ -69,9 +69,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <div className="bg-primary p-2.5 rounded">
-              <Icon name="Building2" className="h-7 w-7 text-primary-foreground" />
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/f8515404-dd43-4733-8529-9498a2ea986c.jpg" 
+              alt="Максимум Строй" 
+              className="h-12 w-12 object-contain rounded"
+            />
             <div>
               <div className="font-bold text-2xl text-primary">Максимум Строй</div>
               <div className="text-xs text-muted-foreground">Строительная компания с 2005 года</div>

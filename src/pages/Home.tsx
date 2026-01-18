@@ -80,14 +80,20 @@ const Home = () => {
                 size="lg"
                 className="bg-white text-primary hover:bg-gray-100 text-lg px-8"
               >
-                <Link to="/calculator">Рассчитать проект</Link>
+                <Link to="/calculator">
+                  <Icon name="Calculator" className="mr-2 h-5 w-5" />
+                  Рассчитать проект
+                </Link>
               </Button>
               <Button
                 asChild
                 size="lg"
                 className="bg-white text-primary hover:bg-gray-100 text-lg px-8"
               >
-                <Link to="/projects">Каталог проектов</Link>
+                <Link to="/projects">
+                  <Icon name="FolderOpen" className="mr-2 h-5 w-5" />
+                  Каталог проектов
+                </Link>
               </Button>
             </div>
           </div>
