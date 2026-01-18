@@ -16,7 +16,7 @@ const Footer = () => {
               <div className="font-bold text-lg">Максимум Строй</div>
             </div>
             <p className="text-sm text-secondary-foreground/80 mb-2">
-              Профессиональное строительство и качественный сервис с 2005 года
+              Профессиональное строительство и качественный сервис с 2010 года
             </p>
             <p className="text-xs text-secondary-foreground/60">
               ИНН 7707123456 | ОГРН 1057712345678
@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm mb-4">
             <p className="text-secondary-foreground/60">
-              © 2005-2026 ООО "Максимум Строй". Все права защищены.
+              © 2010-2026 ООО "Максимум Строй". Все права защищены.
             </p>
             <div className="flex gap-4">
               <a href="https://www.instagram.com/maksimumstroy/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">

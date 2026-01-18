@@ -63,7 +63,7 @@ const Header = () => {
             />
             <div>
               <div className="font-bold text-2xl text-primary">Максимум Строй</div>
-              <div className="text-xs text-muted-foreground">Строительная компания с 2005 года</div>
+              <div className="text-xs text-muted-foreground">Строительная компания с 2010 года</div>
             </div>
           </Link>
 

@@ -12,8 +12,8 @@ const Home = () => {
   const [callbackModalOpen, setCallbackModalOpen] = useState(false);
 
   const stats = [
-    { value: "500+", label: "Реализованных проектов" },
-    { value: "21", label: "Год на рынке" },
+    { value: "350+", label: "Реализованных проектов" },
+    { value: "16", label: "Лет на рынке" },
     { value: "150+", label: "Специалистов" },
     { value: "98%", label: "Довольных клиентов" },
   ];
@@ -65,7 +65,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl animate-fade-in">
             <Badge className="bg-secondary text-white mb-4 text-sm py-1 px-3">
-              С 2005 года строим дома мечты
+              С 2010 года строим дома мечты
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Строительство домов из бруса под ключ

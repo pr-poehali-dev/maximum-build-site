@@ -225,6 +225,68 @@ const Certificates = () => {
         </div>
       </section>
 
+      <section className="py-16 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl font-bold mb-12 text-center">Страхование ответственности</h2>
+            <Card className="p-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="flex items-start gap-4">
+                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="Shield" className="h-8 w-8 text-accent" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-3">Страхование гражданской ответственности</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Компания застрахована в ведущих страховых компаниях на сумму до 50 млн рублей
+                    </p>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" className="h-4 w-4 text-accent" />
+                        <span>Страховая компания: "СОГАЗ"</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" className="h-4 w-4 text-accent" />
+                        <span>Полис № 7707-GС-2024-012345</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" className="h-4 w-4 text-accent" />
+                        <span>Срок действия: до 31.12.2026</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="ShieldAlert" className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-3">Компенсационный фонд СРО</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Как член НОСТРОЙ, компания участвует в компенсационном фонде саморегулируемой организации
+                    </p>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" className="h-4 w-4 text-primary" />
+                        <span>Размер взноса: 30 млн рублей</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" className="h-4 w-4 text-primary" />
+                        <span>Защита интересов заказчика</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" className="h-4 w-4 text-primary" />
+                        <span>Гарантия возмещения убытков</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {selectedImage && (
         <div 
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
