@@ -54,7 +54,7 @@ const Home = () => {
       <section 
         className="relative bg-cover bg-center py-40 text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(118, 24, 32, 0.75), rgba(118, 24, 32, 0.75)), url('https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/ff90d193-120f-4342-87e3-18cfd9b34443.jpg')`,
+          backgroundImage: `linear-gradient(rgba(26, 31, 44, 0.7), rgba(26, 31, 44, 0.7)), url('https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/ff90d193-120f-4342-87e3-18cfd9b34443.jpg')`,
         }}
       >
         <div className="container mx-auto px-4">
