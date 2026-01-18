@@ -46,6 +46,33 @@ const Portfolio = () => {
       image: 'https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/b64704d8-8ba4-48d5-b0dc-6dbeed1ca6f9.jpg',
       description: 'Элитный поселок из 50 коттеджей с инфраструктурой',
     },
+    {
+      category: 'government',
+      title: 'Школа №125',
+      location: 'Москва',
+      year: '2023',
+      type: 'Образовательное учреждение',
+      image: 'https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/ff90d193-120f-4342-87e3-18cfd9b34443.jpg',
+      description: 'Строительство современной школы на 1200 мест с бассейном и спортзалом',
+    },
+    {
+      category: 'government',
+      title: 'Поликлиника №7',
+      location: 'Санкт-Петербург',
+      year: '2024',
+      type: 'Медицинское учреждение',
+      image: 'https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/5b951649-1d40-4a93-bebd-db8dd39693bc.jpg',
+      description: 'Реконструкция и расширение городской поликлиники',
+    },
+    {
+      category: 'government',
+      title: 'Спорткомплекс "Олимп"',
+      location: 'Казань',
+      year: '2023',
+      type: 'Спортивный объект',
+      image: 'https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/b64704d8-8ba4-48d5-b0dc-6dbeed1ca6f9.jpg',
+      description: 'Многофункциональный спортивный комплекс с ледовой ареной',
+    },
   ];
 
   const mediaGallery = [
@@ -70,11 +97,12 @@ const Portfolio = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-12">
+            <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-5 mb-12">
               <TabsTrigger value="all">Все проекты</TabsTrigger>
               <TabsTrigger value="residential">Жилые</TabsTrigger>
               <TabsTrigger value="commercial">Коммерческие</TabsTrigger>
               <TabsTrigger value="industrial">Промышленные</TabsTrigger>
+              <TabsTrigger value="government">Гос заказы</TabsTrigger>
             </TabsList>
 
             <TabsContent value="all">
@@ -162,6 +190,37 @@ const Portfolio = () => {
                     <div className="p-6">
                       <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                       <p className="text-muted-foreground">{project.description}</p>
+                    </div>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="government">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {projects.filter(p => p.category === 'government').map((project, index) => (
+                  <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow group">
+                    <div className="relative overflow-hidden h-64">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                      <div className="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">
+                        {project.year}
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <div className="text-sm text-primary font-medium mb-2">{project.type}</div>
+                      <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                      <div className="flex items-center gap-2 text-muted-foreground mb-3">
+                        <Icon name="MapPin" className="h-4 w-4" />
+                        <span className="text-sm">{project.location}</span>
+                      </div>
+                      <p className="text-muted-foreground mb-4">{project.description}</p>
+                      <Button variant="outline" className="w-full">
+                        Подробнее
+                      </Button>
                     </div>
                   </Card>
                 ))}
