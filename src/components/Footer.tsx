@@ -59,7 +59,15 @@ const Footer = () => {
                 <Icon name="MapPin" className="h-4 w-4 mt-0.5 text-primary" />
                 <span>г. Москва, ул. Строителей, д. 15</span>
               </li>
+              <li className="flex items-start gap-2">
+                <Icon name="Clock" className="h-4 w-4 mt-0.5 text-primary" />
+                <span>Пн-Пт: 9:00-18:00</span>
+              </li>
             </ul>
+            <div className="mt-4 flex gap-3">
+              <a href="#" className="text-primary hover:underline text-sm">WhatsApp</a>
+              <a href="#" className="text-primary hover:underline text-sm">VK</a>
+            </div>
           </div>
         </div>
 
