@@ -70,9 +70,9 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <img 
-              src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/88c60e06-f54f-4db2-9801-4cfe55894821.jpg" 
+              src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/57806fef-8c15-416d-b870-abdc27c6636d.jpg" 
               alt="Максимум Строй" 
-              className="h-12 object-contain"
+              className="h-14 object-contain"
             />
           </Link>
 
