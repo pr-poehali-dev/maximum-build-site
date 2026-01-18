@@ -77,9 +77,6 @@ const Footer = () => {
           </p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-primary transition-colors">
-              <Icon name="Facebook" className="h-5 w-5" />
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
               <Icon name="Instagram" className="h-5 w-5" />
             </a>
             <a href="#" className="hover:text-primary transition-colors">
