@@ -72,16 +72,19 @@ const Home = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
+                asChild
                 size="lg"
                 className="bg-white text-primary hover:bg-gray-100 text-lg px-8"
               >
-                Рассчитать проект
+                <Link to="/calculator">Рассчитать проект</Link>
               </Button>
               <Button
+                asChild
                 size="lg"
-                className="bg-white text-primary hover:bg-gray-100 text-lg px-8"
+                variant="outline"
+                className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary"
               >
-                Каталог проектов
+                <Link to="/projects">Каталог проектов</Link>
               </Button>
             </div>
           </div>
@@ -270,15 +273,18 @@ const Home = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="bg-white text-primary hover:bg-gray-100 text-lg px-8"
             >
-              <Icon name="Phone" className="mr-2 h-5 w-5" />
-              Заказать звонок
+              <Link to="/contacts">
+                <Icon name="Phone" className="mr-2 h-5 w-5" />
+                Заказать звонок
+              </Link>
             </Button>
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              Посмотреть проекты
+            <Button asChild size="lg" variant="secondary" className="text-lg px-8">
+              <Link to="/projects">Посмотреть проекты</Link>
             </Button>
           </div>
         </div>

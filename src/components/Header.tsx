@@ -83,11 +83,11 @@ const Header = () => {
               </a>
               <span className="text-xs text-muted-foreground">Бесплатная консультация</span>
             </div>
-            <Button className="bg-primary hover:bg-primary/90">
-              Заказать звонок
+            <Button asChild className="bg-primary hover:bg-primary/90">
+              <Link to="/contacts">Заказать звонок</Link>
             </Button>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-              Рассчитать проект
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+              <Link to="/calculator">Рассчитать проект</Link>
             </Button>
           </div>
 
@@ -167,8 +167,12 @@ const Header = () => {
               <a href="tel:+74951234567" className="block text-lg font-bold text-primary">
                 +7 (495) 123-45-67
               </a>
-              <Button className="w-full">Заказать звонок</Button>
-              <Button variant="outline" className="w-full">Рассчитать проект</Button>
+              <Button asChild className="w-full">
+                <Link to="/contacts">Заказать звонок</Link>
+              </Button>
+              <Button asChild variant="outline" className="w-full">
+                <Link to="/calculator">Рассчитать проект</Link>
+              </Button>
             </div>
           </nav>
         )}
