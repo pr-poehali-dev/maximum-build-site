@@ -65,14 +65,14 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl animate-fade-in">
             <Badge className="bg-secondary text-white mb-4 text-sm py-1 px-3">
-              С 2010 года строим дома мечты
+              Строительная компания в Калининграде
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Строительство домов из бруса под ключ
             </h1>
             <p className="text-xl mb-8 text-gray-100">
-              ООО "Максимум Строй" — профессиональное строительство жилых, коммерческих и промышленных объектов.
-              Лицензии СРО. Гарантия качества.
+              ООО "Максимум Строй" (ИНН 3900039662, ОГРН 1253900003917) — профессиональное строительство 
+              жилых, коммерческих и промышленных объектов. Качество и надежность.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button

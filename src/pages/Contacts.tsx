@@ -36,9 +36,9 @@ const Contacts = () => {
                     <Icon name="MapPin" className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Адрес офиса</h3>
+                    <h3 className="font-semibold text-lg mb-1">Юридический адрес</h3>
                     <p className="text-muted-foreground">
-                      г. Москва, ул. Новослободская, д. 14/19, стр. 8, офис 205
+                      236034, Калининградская обл., г. Калининград, ул. Левитана, д. 61, кв. 10
                     </p>
                   </div>
                 </div>
@@ -52,13 +52,13 @@ const Contacts = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Телефон</h3>
                     <p className="text-muted-foreground mb-1">
-                      <a href="tel:+74992901234" className="hover:text-primary transition-colors">
-                        +7 (499) 290-12-34
+                      <a href="tel:+74012345678" className="hover:text-primary transition-colors">
+                        +7 (4012) 34-56-78
                       </a>
                     </p>
                     <p className="text-muted-foreground">
-                      <a href="tel:+74956401515" className="hover:text-primary transition-colors">
-                        +7 (495) 640-15-15
+                      <a href="tel:+79111234567" className="hover:text-primary transition-colors">
+                        +7 (911) 123-45-67
                       </a>
                     </p>
                   </div>
@@ -73,13 +73,13 @@ const Contacts = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
                     <p className="text-muted-foreground mb-1">
-                      <a href="mailto:info@maksimumstroy.ru" className="hover:text-primary transition-colors">
-                        info@maksimumstroy.ru
+                      <a href="mailto:info@maksimumstroy39.ru" className="hover:text-primary transition-colors">
+                        info@maksimumstroy39.ru
                       </a>
                     </p>
                     <p className="text-muted-foreground">
-                      <a href="mailto:zakaz@maksimumstroy.ru" className="hover:text-primary transition-colors">
-                        zakaz@maksimumstroy.ru
+                      <a href="mailto:zakaz@maksimumstroy39.ru" className="hover:text-primary transition-colors">
+                        zakaz@maksimumstroy39.ru
                       </a>
                     </p>
                   </div>

@@ -16,10 +16,10 @@ const Footer = () => {
               <div className="font-bold text-lg">Максимум Строй</div>
             </div>
             <p className="text-sm text-secondary-foreground/80 mb-2">
-              Профессиональное строительство и качественный сервис с 2010 года
+              Профессиональное строительство жилых и нежилых зданий
             </p>
             <p className="text-xs text-secondary-foreground/60">
-              ИНН 7707123456 | ОГРН 1057712345678
+              ИНН 3900039662 | ОГРН 1253900003917
             </p>
           </div>
 
@@ -48,19 +48,19 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Icon name="Phone" className="h-4 w-4 mt-0.5 text-primary" />
-                <a href="tel:+74992901234" className="hover:text-primary transition-colors">
-                  +7 (499) 290-12-34
+                <a href="tel:+74012345678" className="hover:text-primary transition-colors">
+                  +7 (4012) 34-56-78
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="Mail" className="h-4 w-4 mt-0.5 text-primary" />
-                <a href="mailto:info@maksimumstroy.ru" className="hover:text-primary transition-colors">
-                  info@maksimumstroy.ru
+                <a href="mailto:info@maksimumstroy39.ru" className="hover:text-primary transition-colors">
+                  info@maksimumstroy39.ru
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="MapPin" className="h-4 w-4 mt-0.5 text-primary" />
-                <span>г. Москва, ул. Новослободская, д. 14/19, стр. 8</span>
+                <span>г. Калининград, ул. Левитана, д. 61, кв. 10</span>
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="Clock" className="h-4 w-4 mt-0.5 text-primary" />
@@ -68,8 +68,8 @@ const Footer = () => {
               </li>
             </ul>
             <div className="mt-4 flex gap-3">
-              <a href="https://wa.me/74992901234" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">WhatsApp</a>
-              <a href="https://vk.com/maksimumstroy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">VK</a>
+              <a href="https://wa.me/74012345678" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">WhatsApp</a>
+              <a href="https://t.me/maksimumstroy39" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">Telegram</a>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm mb-4">
             <p className="text-secondary-foreground/60">
-              © 2010-2026 ООО "Максимум Строй". Все права защищены.
+              © 2025-2026 ООО "Максимум Строй". Все права защищены.
             </p>
             <div className="flex gap-4">
               <a href="https://www.instagram.com/maksimumstroy/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
@@ -89,8 +89,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-xs text-secondary-foreground/50 text-center md:text-left">
-            <p>ООО "Максимум Строй" | ИНН 7707123456 | ОГРН 1057712345678</p>
-            <p className="mt-1">Юридический адрес: г. Москва, ул. Новослободская, д. 14/19, стр. 8, офис 205</p>
+            <p>ООО "Максимум Строй" | ИНН 3900039662 | ОГРН 1253900003917 | КПП 390001001</p>
+            <p className="mt-1">Юридический адрес: 236034, Калининградская область, г. Калининград, ул. Левитана, д. 61, кв. 10</p>
+            <p className="mt-1">Генеральный директор: Бычковский Максим Игоревич</p>
           </div>
         </div>
       </div>
