@@ -98,24 +98,6 @@ const Contacts = () => {
                   </div>
                 </div>
               </Card>
-
-              <div className="pt-6">
-                <h3 className="font-semibold text-lg mb-4">Мы в социальных сетях</h3>
-                <div className="flex gap-4">
-                  <a href="#" className="bg-muted hover:bg-primary hover:text-white p-3 rounded-lg transition-colors">
-                    <Icon name="Facebook" className="h-6 w-6" />
-                  </a>
-                  <a href="#" className="bg-muted hover:bg-primary hover:text-white p-3 rounded-lg transition-colors">
-                    <Icon name="Instagram" className="h-6 w-6" />
-                  </a>
-                  <a href="#" className="bg-muted hover:bg-primary hover:text-white p-3 rounded-lg transition-colors">
-                    <Icon name="Linkedin" className="h-6 w-6" />
-                  </a>
-                  <a href="#" className="bg-muted hover:bg-primary hover:text-white p-3 rounded-lg transition-colors">
-                    <Icon name="Youtube" className="h-6 w-6" />
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
