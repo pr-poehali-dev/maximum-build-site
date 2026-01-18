@@ -7,32 +7,32 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 215 25% 15%;
+    --foreground: 0 0% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 0 0% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 0 0% 25%;
 
-    --primary: 199 89% 48%;
+    --primary: 355 66% 29%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 25% 15%;
+    --secondary: 15 40% 53%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 13% 95%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 24 95% 53%;
+    --accent: 355 66% 29%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 199 89% 48%;
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 355 66% 29%;
 
     --radius: 0.375rem;
 
@@ -47,33 +47,33 @@
   }
 
   .dark {
-    --background: 215 25% 15%;
+    --background: 0 0% 15%;
     --foreground: 0 0% 98%;
 
-    --card: 215 25% 18%;
+    --card: 0 0% 18%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 215 25% 18%;
+    --popover: 0 0% 18%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 199 89% 48%;
+    --primary: 355 66% 29%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 25% 25%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 15 40% 53%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 215 25% 25%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 0 0% 25%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 24 95% 53%;
+    --accent: 355 66% 29%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 215 25% 25%;
-    --input: 215 25% 25%;
-    --ring: 199 89% 48%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 355 66% 29%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -103,7 +103,7 @@
   h4,
   h5,
   h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
   }
 }
