@@ -9,7 +9,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contacts from "./pages/Contacts";
-import Stock from "./pages/Stock";
+
 import Calculator from "./pages/Calculator";
 import Team from "./pages/Team";
 import Certificates from "./pages/Certificates";
@@ -31,7 +31,7 @@ const App = () => (
           <Route path="/projects" element={<Portfolio />} />
           <Route path="/projects/:category" element={<Portfolio />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/stock" element={<Stock />} />
+
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/team" element={<Team />} />
           <Route path="/certificates" element={<Certificates />} />

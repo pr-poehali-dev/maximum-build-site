@@ -46,12 +46,6 @@ const Home = () => {
     },
   ];
 
-  const promotions = [
-    { title: "Спецтехника в подарок", badge: "Подарок" },
-    { title: "Скидка до 15% на дома", badge: "До -15%" },
-    { title: "Принимаем мат. капитал", badge: "Мат. капитал" },
-  ];
-
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -96,26 +90,6 @@ const Home = () => {
                 </Link>
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-6 bg-primary">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center items-center gap-8 text-white">
-            {promotions.map((promo, index) => (
-              <Link
-                key={index}
-                to="/stock"
-                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
-              >
-                <Icon name="Tag" className="h-6 w-6" />
-                <div>
-                  <div className="text-sm opacity-80">{promo.badge}</div>
-                  <div className="font-bold">{promo.title}</div>
-                </div>
-              </Link>
-            ))}
           </div>
         </div>
       </section>
