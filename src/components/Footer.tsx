@@ -48,9 +48,10 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Icon name="Phone" className="h-4 w-4 mt-0.5 text-primary" />
-                <a href="tel:+74012345678" className="hover:text-primary transition-colors">
-                  +7 (4012) 34-56-78
-                </a>
+                <div className="flex flex-col space-y-1">
+                  <a href="tel:+79097800008" className="hover:text-primary transition-colors">+7 909 780 0008 Тимур</a>
+                  <a href="tel:+79118679247" className="hover:text-primary transition-colors">+7 911 867 9247 Максим</a>
+                </div>
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="Mail" className="h-4 w-4 mt-0.5 text-primary" />
@@ -68,8 +69,8 @@ const Footer = () => {
               </li>
             </ul>
             <div className="mt-4 flex gap-3">
-              <a href="https://wa.me/74012345678" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">WhatsApp</a>
-              <a href="https://t.me/maksimumstroy39" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">Telegram</a>
+              <a href="https://wa.me/79097800008" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">WhatsApp Тимур</a>
+              <a href="https://wa.me/79118679247" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">WhatsApp Максим</a>
             </div>
           </div>
         </div>

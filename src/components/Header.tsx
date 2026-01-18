@@ -73,12 +73,10 @@ const Header = () => {
 
           <div className="hidden lg:flex items-center gap-6">
             <div className="flex flex-col">
-              <a
-                href="tel:+74012345678"
-                className="text-xl font-bold text-primary"
-              >
-                +7 909 780 0008 Тимур +7 911 867 9247 Максим
-              </a>
+              <div className="text-sm font-bold text-primary space-y-1">
+                <a href="tel:+79097800008" className="block hover:underline">+7 909 780 0008 Тимур</a>
+                <a href="tel:+79118679247" className="block hover:underline">+7 911 867 9247 Максим</a>
+              </div>
               <span className="text-xs text-muted-foreground">
                 Бесплатная консультация
               </span>
@@ -173,12 +171,10 @@ const Header = () => {
               </div>
             ))}
             <div className="mt-4 space-y-3">
-              <a
-                href="tel:+74012345678"
-                className="block text-lg font-bold text-primary"
-              >
-                +7 (4012) 34-56-78
-              </a>
+              <div className="space-y-2">
+                <a href="tel:+79097800008" className="block text-lg font-bold text-primary">+7 909 780 0008 Тимур</a>
+                <a href="tel:+79118679247" className="block text-lg font-bold text-primary">+7 911 867 9247 Максим</a>
+              </div>
               <Button
                 onClick={() => {
                   setCallbackModalOpen(true);

@@ -52,13 +52,13 @@ const Contacts = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Телефон</h3>
                     <p className="text-muted-foreground mb-1">
-                      <a href="tel:+74012345678" className="hover:text-primary transition-colors">
-                        +7 (4012) 34-56-78
+                      <a href="tel:+79097800008" className="hover:text-primary transition-colors">
+                        +7 909 780 0008 (Тимур)
                       </a>
                     </p>
                     <p className="text-muted-foreground">
-                      <a href="tel:+79111234567" className="hover:text-primary transition-colors">
-                        +7 (911) 123-45-67
+                      <a href="tel:+79118679247" className="hover:text-primary transition-colors">
+                        +7 911 867 9247 (Максим)
                       </a>
                     </p>
                   </div>
