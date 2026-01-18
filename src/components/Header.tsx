@@ -77,9 +77,7 @@ const Header = () => {
                 <a href="tel:+79097800008" className="block hover:underline"></a>
                 <a href="tel:+79118679247" className="block hover:underline"></a>
               </div>
-              <span className="text-xs text-muted-foreground">
-                Бесплатная консультация
-              </span>
+              <span className="text-xs text-muted-foreground"></span>
             </div>
             <Button
               onClick={() => setCallbackModalOpen(true)}
