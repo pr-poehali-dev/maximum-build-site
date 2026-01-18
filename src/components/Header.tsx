@@ -69,8 +69,8 @@ const Header = () => {
 
           <div className="hidden lg:flex items-center gap-6">
             <div className="flex flex-col">
-              <a href="tel:+74951234567" className="text-xl font-bold text-primary">
-                +7 (495) 123-45-67
+              <a href="tel:+74992901234" className="text-xl font-bold text-primary">
+                +7 (499) 290-12-34
               </a>
               <span className="text-xs text-muted-foreground">Бесплатная консультация</span>
             </div>
@@ -155,8 +155,8 @@ const Header = () => {
               </div>
             ))}
             <div className="mt-4 space-y-3">
-              <a href="tel:+74951234567" className="block text-lg font-bold text-primary">
-                +7 (495) 123-45-67
+              <a href="tel:+74992901234" className="block text-lg font-bold text-primary">
+                +7 (499) 290-12-34
               </a>
               <Button onClick={() => { setCallbackModalOpen(true); setMobileMenuOpen(false); }} className="w-full">
                 Заказать звонок

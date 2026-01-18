@@ -45,19 +45,19 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Icon name="Phone" className="h-4 w-4 mt-0.5 text-primary" />
-                <a href="tel:+74951234567" className="hover:text-primary transition-colors">
-                  +7 (495) 123-45-67
+                <a href="tel:+74992901234" className="hover:text-primary transition-colors">
+                  +7 (499) 290-12-34
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="Mail" className="h-4 w-4 mt-0.5 text-primary" />
-                <a href="mailto:info@maksimum-stroy.ru" className="hover:text-primary transition-colors">
-                  info@maksimum-stroy.ru
+                <a href="mailto:info@maksimumstroy.ru" className="hover:text-primary transition-colors">
+                  info@maksimumstroy.ru
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="MapPin" className="h-4 w-4 mt-0.5 text-primary" />
-                <span>г. Москва, ул. Строителей, д. 15</span>
+                <span>г. Москва, ул. Новослободская, д. 14/19, стр. 8</span>
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="Clock" className="h-4 w-4 mt-0.5 text-primary" />
@@ -65,8 +65,8 @@ const Footer = () => {
               </li>
             </ul>
             <div className="mt-4 flex gap-3">
-              <a href="#" className="text-primary hover:underline text-sm">WhatsApp</a>
-              <a href="#" className="text-primary hover:underline text-sm">VK</a>
+              <a href="https://wa.me/74992901234" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">WhatsApp</a>
+              <a href="https://vk.com/maksimumstroy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">VK</a>
             </div>
           </div>
         </div>
