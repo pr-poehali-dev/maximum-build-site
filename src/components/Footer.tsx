@@ -9,9 +9,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img 
-                src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/f8515404-dd43-4733-8529-9498a2ea986c.jpg" 
+                src="https://cdn.poehali.dev/projects/9bd6482d-e2fc-4bbc-a391-5c1e524b4183/files/32a44238-31fe-4140-a3f9-254023406bbe.jpg" 
                 alt="Максимум Строй" 
-                className="h-8 w-8 object-contain rounded"
+                className="h-10 w-10 object-contain"
               />
               <div className="font-bold text-lg">Максимум Строй</div>
             </div>
