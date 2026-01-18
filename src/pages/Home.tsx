@@ -64,10 +64,7 @@ const Home = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Строительство домов из бруса под ключ
             </h1>
-            <p className="text-xl mb-8 text-gray-100">
-              ООО "Максимум Строй" (ИНН 3900039662, ОГРН 1253900003917) — профессиональное строительство 
-              жилых, коммерческих и промышленных объектов. Качество и надежность.
-            </p>
+            <p className="text-xl mb-8 text-gray-100">Мы строим будущее, а вы строите с нами!</p>
             <div className="flex flex-wrap gap-4">
               <Button
                 asChild

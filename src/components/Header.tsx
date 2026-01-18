@@ -73,10 +73,10 @@ const Header = () => {
           <div className="hidden lg:flex items-center gap-6">
             <div className="flex flex-col">
               <div className="text-sm font-bold text-primary space-y-1">
-                <a href="tel:+79097800008" className="block hover:underline">+7 909 780 0008 Тимур</a>
-                <a href="tel:+79118679247" className="block hover:underline">+7 911 867 9247 Максим</a>
+                <a href="tel:+79097800008" className="block hover:underline"></a>
+                <a href="tel:+79118679247" className="block hover:underline"></a>
               </div>
-              <span className="text-xs text-muted-foreground">Бесплатная консультация</span>
+              <span className="text-xs text-muted-foreground"></span>
             </div>
             <Button
               onClick={() => setCallbackModalOpen(true)}
