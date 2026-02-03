@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
@@ -115,11 +116,13 @@ const Services = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card
-                key={index}
-                className="p-6 hover:shadow-2xl transition-all duration-300 group cursor-pointer border-2 hover:border-primary/50"
-              >
+            {services.map((service, index) => {
+              const slug = service.category.toLowerCase().replace(/\s+/g, '-');
+              return (
+              <Link key={index} to={`/services/${slug}`}>
+                <Card
+                  className="p-6 hover:shadow-2xl transition-all duration-300 group cursor-pointer border-2 hover:border-primary/50 h-full"
+                >
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                     <Icon name={service.icon as any} className="h-7 w-7 text-primary" />
@@ -149,7 +152,9 @@ const Services = () => {
                   Подробнее
                 </Button>
               </Card>
-            ))}
+              </Link>
+            );
+            })}
           </div>
         </div>
       </section>

@@ -14,6 +14,7 @@ import Calculator from "./pages/Calculator";
 import Team from "./pages/Team";
 import Certificates from "./pages/Certificates";
 import Prices from "./pages/Prices";
+import ServiceDetail from "./pages/ServiceDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,7 +29,7 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services/:category" element={<Services />} />
+          <Route path="/services/:slug" element={<ServiceDetail />} />
           <Route path="/projects" element={<Portfolio />} />
           <Route path="/projects/:category" element={<Portfolio />} />
           <Route path="/portfolio" element={<Portfolio />} />
