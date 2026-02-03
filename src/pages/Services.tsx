@@ -1,76 +1,71 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ContactForm from '@/components/ContactForm';
-import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import Icon from '@/components/ui/icon';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
     {
-      icon: 'Building2',
-      title: 'Жилищное строительство',
-      description: 'Строительство многоквартирных домов, таунхаусов и частных коттеджей',
-      features: [
-        'Многоквартирные дома',
-        'Частные коттеджи и таунхаусы',
-        'Малоэтажное строительство',
-        'Строительство под ключ',
-      ],
+      category: 'Проектирование домов',
+      items: [],
     },
     {
-      icon: 'Factory',
-      title: 'Промышленное строительство',
-      description: 'Возведение производственных и складских комплексов любой сложности',
-      features: [
-        'Производственные цеха',
-        'Складские комплексы',
-        'Логистические центры',
-        'Ангары и навесы',
-      ],
+      category: 'Строительство домов',
+      items: [],
     },
     {
-      icon: 'Store',
-      title: 'Коммерческая недвижимость',
-      description: 'Строительство торговых центров, офисов и бизнес-центров',
-      features: [
-        'Торговые центры',
-        'Офисные здания',
-        'Бизнес-центры класса А',
-        'Гостиницы и отели',
-      ],
+      category: 'Очистные сооружения',
+      items: ['Септики', 'Станции биологической очистки', 'Установка септика'],
     },
     {
-      icon: 'Wrench',
-      title: 'Реконструкция и ремонт',
-      description: 'Капитальный ремонт и полная реконструкция существующих зданий',
-      features: [
-        'Капитальный ремонт',
-        'Реконструкция фасадов',
-        'Усиление конструкций',
-        'Модернизация инженерных систем',
-      ],
+      category: 'Дренажные работы',
+      items: [],
     },
     {
-      icon: 'Layers',
-      title: 'Фундаментные работы',
-      description: 'Устройство фундаментов любых типов для различных видов грунтов',
-      features: [
-        'Ленточные фундаменты',
-        'Свайные фундаменты',
-        'Плитные основания',
-        'Монолитные работы',
-      ],
+      category: 'Ливневая канализация',
+      items: [],
     },
     {
-      icon: 'Zap',
-      title: 'Инженерные системы',
-      description: 'Проектирование и монтаж всех видов инженерных коммуникаций',
-      features: [
-        'Водоснабжение и канализация',
-        'Отопление и вентиляция',
-        'Электроснабжение',
-        'Системы безопасности',
+      category: 'Заборы и ограждения',
+      items: [],
+    },
+    {
+      category: 'Фундаментные работы',
+      items: [],
+    },
+    {
+      category: 'Кровельные работы',
+      items: ['Плоская крыша', 'Скатная крыша'],
+    },
+    {
+      category: 'Утепление фасадов',
+      items: [],
+    },
+    {
+      category: 'Отделочные работы',
+      items: [],
+    },
+    {
+      category: 'Штукатурные работы',
+      items: ['Гипсовая штукатурка стен', 'Механизированная штукатурка', 'Цементно-известковая штукатурка'],
+    },
+    {
+      category: 'Стяжка пола',
+      items: [],
+    },
+    {
+      category: 'Гидроизоляция',
+      items: [],
+    },
+    {
+      category: 'Благоустройство территории',
+      items: [
+        'Автоматический полив',
+        'Газон под ключ (посев, посадка)',
+        'Ландшафтный дизайн',
+        'Ландшафтный проект',
+        'Озеленение территории',
+        'Укладка тротуарной плитки',
       ],
     },
   ];
@@ -78,52 +73,56 @@ const Services = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
-      <section className="py-20 bg-muted">
+
+      <section className="py-20 bg-gradient-to-br from-primary/10 via-accent/5 to-background">
         <div className="container mx-auto px-4">
           <h1 className="text-5xl font-bold mb-6 text-center">Наши услуги</h1>
           <p className="text-xl text-center text-muted-foreground max-w-3xl mx-auto">
-            Полный спектр строительных услуг для реализации проектов любой сложности
+            Полный спектр строительных услуг от проектирования до благоустройства
           </p>
         </div>
       </section>
 
       <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-x-16 gap-y-6">
             {services.map((service, index) => (
-              <Card key={index} className="p-8 hover:shadow-xl transition-shadow">
-                <div className="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                  <Icon name={service.icon} className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
-                <p className="text-muted-foreground mb-6">{service.description}</p>
-                <ul className="space-y-2 mb-6">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm">
-                      <Icon name="Check" className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button variant="outline" className="w-full">
-                  Подробнее
-                </Button>
-              </Card>
+              <div key={index}>
+                <Link
+                  to={`/services/${service.category.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="text-lg font-semibold hover:text-primary transition-colors hover:underline"
+                >
+                  {service.category}
+                </Link>
+                {service.items.length > 0 && (
+                  <ul className="mt-2 ml-6 space-y-1">
+                    {service.items.map((item, idx) => (
+                      <li key={idx}>
+                        <Link
+                          to={`/services/${service.category.toLowerCase().replace(/\s+/g, '-')}/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                          className="text-base text-muted-foreground hover:text-primary transition-colors hover:underline"
+                        >
+                          {item}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <ContactForm 
-              title="Нужна консультация по услугам?"
-              subtitle="Оставьте заявку, и наш специалист свяжется с вами в ближайшее время"
-              showServiceSelect={true}
-            />
-          </div>
+      <section className="py-16 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-6">Нужна консультация?</h2>
+          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            Оставьте заявку, и наш специалист расскажет подробнее о наших услугах
+          </p>
+          <Button size="lg" variant="secondary" className="text-lg px-8">
+            Получить консультацию
+          </Button>
         </div>
       </section>
 

@@ -18,12 +18,6 @@ const Header = () => {
     {
       label: "Проекты",
       path: "/projects",
-      submenu: [
-        { label: "Все проекты", path: "/projects" },
-        { label: "Дома из бруса", path: "/projects/timber" },
-        { label: "Каркасные дома", path: "/projects/frame" },
-        { label: "Бани", path: "/projects/baths" },
-      ],
     },
     {
       label: "Услуги",
