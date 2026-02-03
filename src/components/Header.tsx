@@ -22,12 +22,6 @@ const Header = () => {
     {
       label: "Услуги",
       path: "/services",
-      submenu: [
-        { label: "Строительство", path: "/services/construction" },
-        { label: "Отделка", path: "/services/finishing" },
-        { label: "Кровельные работы", path: "/services/roofing" },
-        { label: "Фундаменты", path: "/services/foundation" },
-      ],
     },
     { label: "Портфолио", path: "/portfolio" },
     { label: "Команда", path: "/team" },
