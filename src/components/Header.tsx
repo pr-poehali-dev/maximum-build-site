@@ -14,12 +14,6 @@ const Header = () => {
     {
       label: "О компании",
       path: "/about",
-      submenu: [
-        { label: "О нас", path: "/about" },
-        { label: "Производство", path: "/production" },
-        { label: "Вакансии", path: "/vacancies" },
-        { label: "FAQ", path: "/faq" },
-      ],
     },
     {
       label: "Проекты",
